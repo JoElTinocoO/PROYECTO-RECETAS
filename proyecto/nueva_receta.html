@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Aplicación{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Mi Aplicación de Recetas{% endblock %}</h1>
+        <nav>
+            <a href="{% url 'lista_recetas' %}">Inicio</a>
+            <a href="{% url 'nueva_receta' %}">Agregar Receta</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Aplicación de recetas &copy; 2024</p>
+    </footer>
+</body>
+</html>
+{
+    "type": "chrome",
+    "request": "launch",
+    "name": "Open recetas.html",
+    "file": "c:\\Users\\HP\\OneDrive\\Documents\\PYTHON\\PROYECTO DJANGO\\mi_proyecto\\mi_aplicacion\\templates\\mi_aplicacion\\recetas.html"
+}
